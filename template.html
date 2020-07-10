@@ -74,25 +74,25 @@
                     <a class="nav-link page-scroll" href="index.html#header">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#features">FEATURES</a>
+                    <a class="nav-link page-scroll" href="index.html#features">METHODOOGY</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#preview">PREVIEW</a>
+                    <a class="nav-link page-scroll" href="index.html#preview">DATA BREAKDOWN</a>
                 </li>
 
                 <!-- Dropdown Menu -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle page-scroll" href="index.html#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DETAILS</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">Visualizations</span></a>
+                        <a class="dropdown-item" href="template.html"><span class="item-text">CREATE YOUR OWN WINE</span></a>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">Page TBD</span></a>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">ANALYSIS</span></a>
                     </div>
                 </li>
                 <!-- end of dropdown menu -->
 
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#contact">CONTACT</a>
+                    <a class="nav-link page-scroll" href="index.html#contact">DATA SOURCES</a>
                 </li>
             </ul>
         </div>
@@ -106,7 +106,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Visualizations</h1>
+                    <h1>CREATE YOUR OWN WINE</h1>
                 </div>
                 <!-- end of col -->
             </div>
@@ -124,7 +124,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Visualizations</span>
+                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>CREATE YOUR OWN WINE</span>
                     </div>
                     <!-- end of breadcrumbs -->
                 </div>
@@ -139,59 +139,196 @@
 
 
     <!-- Terms Content -->
-    <div class="ex-basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <!-- Probably need to make this other than a text box -->
-                    <div class="text-container">
-                        <h3>Visualization goes here</h3>
-                    </div>
-                    <!-- end of text-container -->
 
-                    <div class="text-container">
-                        <h3>Explanation goes here</h3>
-                        <p>Blah Blah Blah</p>
-                    </div>
-                    <!-- end of text-container -->
-
-                    <div class="text-container">
-                        <h3>Another text box to add information</h3>
-                        <p>Yada Yada Yada</p>
-
-                    </div>
-                    <!-- end of text-container -->
-                    <a class="btn-outline-reg" href="index.html">BACK</a>
-                </div>
-                <!-- end of text-container -->
-            </div>
-        </div>
-        <!-- end of row -->
-    </div>
-    <!-- end of container -->
-    </div>
-    <!-- end of ex-basic -->
-    <!-- end of terms content -->
-
-
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
+    <!-- Features -->
+    <div id="features" class="tabs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Visualizations</span>
-                    </div>
-                    <!-- end of breadcrumbs -->
+                    <h2>WHAT"S YOUR RECIPE?</h2>
+                    <div class="p-heading p-large">Use the sliders to create your own recipe using the features we looked at. Submit your choices to our prediction model, and we will rate your recipe!</div>
                 </div>
                 <!-- end of col -->
             </div>
             <!-- end of row -->
+            <div class="row">
+
+
+                <!-- Tabs Content-->
+                <div class="tab-content" id="lenoTabsContent">
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card left-pane first">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">pH</h4>
+                                                <p>Pick the pH level</p>
+                                                <div class="slidecontainer">
+                                                    <input type="range" min="2.6" max="4.3" value="3.5" class="slider5" step="0.01" id="ph">
+                                                    <p>Value: <span id="demo1"></span></p>
+                                                </div>
+                                                <p>Pick the Fixed Acidity</p>
+                                                <div class="slidecontainer">
+                                                    <input type="range" min="4.5" max="16.5" value="10" class="slider5" step="0.1" id="fAcidity">
+                                                    <p>Value: <span id="demo2"></span></p>
+                                                </div>
+                                                <p>Pick the Volatile Acidity</p>
+                                                <div class="slidecontainer">
+                                                    <input type="range" min="0.1" max="1.77" value="1.0" class="slider5" step="0.1" id="vAcidity">
+                                                    <p>Value: <span id="demo3"></span></p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-icon">
+                                                <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Citric Acid</h4>
+                                                <p>Pick the Citric Acid level</p>
+                                                <div class="slidecontainer">
+                                                    <input type="range" min="0.0" max="1.0" value="0.5" class="slider5" step="0.1" id="citric">
+                                                    <p>Value: <span id="demo4"></span></p>
+                                                </div>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Residual Sugar</h4>
+                                                <p>Pick the Residual Sugar level</p>
+                                                <div class="slidecontainer">
+                                                    <input type="range" min="0.4" max="17.0" value="8.5" class="slider5" step="0.1" id="rs">
+                                                    <p>Value: <span id="demo5"></span></p>
+                                                </div>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                                <!-- Image Pane -->
+                                <div class="col-lg-4">
+                                    <div class="basic-2">
+                                        <h2 class="card-title">YOUR RESULTS:</h2>
+                                        <h2>Let's see how you did!</h2>
+                                        <h4>Your choices were:</h4>
+                                        <p>--------Choice list goes here</p>
+                                        <p></p>
+                                        <p></p>
+                                        <h4>Our predictive model gave this a score of:</h4>
+                                        <p>----predictive model score goes here.</p>
+                                        <p></p>
+                                        <h4>We predict that your wine will be:</h4>
+                                        <p>----Wine rating here</p>
+                                    </div>
+                                </div>
+                                <!-- end of image pane -->
+
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card right-pane first">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Sulfides</h4>
+                                                <p>Pick the Free Sulphur dioxide level</p>
+                                                <div class="slidecontainer">
+                                                    <input type="range" min="0" max="80" value="40" class="slider5" step="1" id="fsd">
+                                                    <p>Value: <span id="demo6"></span></p>
+                                                </div>
+                                                <p>Pick the Total Sulphur dioxide level</p>
+                                                <div class="slidecontainer">
+                                                    <input type="range" min="5" max="320" value="160" class="slider5" step="5" id="tsd">
+                                                    <p>Value: <span id="demo7"></span></p>
+                                                </div>
+                                                <p>Pick the Sulphates level</p>
+                                                <div class="slidecontainer">
+                                                    <input type="range" min="0.3" max="2" value="1.0" class="slider5" step="0.1" id="sulphates">
+                                                    <p>Value: <span id="demo8"></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Chlorides</h4>
+                                                <p>Pick the Chloride level</p>
+                                                <div class="slidecontainer">
+                                                    <input type="range" min="0.01" max=".65" value=".30" class="slider5" step="0.01" id="chloride">
+                                                    <p>Value: <span id="demo9"></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Miscellaneous</h4>
+                                                <p>Pick the Density level</p>
+                                                <div class="slidecontainer">
+                                                    <input type="range" min="0.99" max="1.01" value="1.00" class="slider5" step="0.001" id="density">
+                                                    <p>Value: <span id="demo10"></span></p>
+                                                </div>
+                                                <p>Pick the Alcohol level</p>
+                                                <div class="slidecontainer">
+                                                    <input type="range" min="8.0" max="15.5" value="11.5" class="slider5" step="0.1" id="alcohol">
+                                                    <p>Value: <span id="demo11"></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+                                <a class="btn-solid-lg2" text-align="center" href="template.html"><i class="fa fa-play"></i>SUBMIT</a>
+                            </div>
+                            <!-- end of row -->
+                        </div>
+                        <!-- end of container -->
+                    </div>
+                    <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+
+                    <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+
+
+                </div>
+                <!-- end of tab-content -->
+                <!-- end of tabs content -->
+
+
+            </div>
         </div>
-        <!-- end of container -->
     </div>
-    <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
+
     <!-- Start of footer -->
     <footer class="footer navbar-fixed-bottom">
         <div class="two-toned-footer-color"></div>
