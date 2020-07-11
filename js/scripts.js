@@ -209,112 +209,150 @@
         $(this).blur();
     });
     var output1 = document.getElementById("demo1");
+    var output1a = document.getElementById("demo1a");
     var slider1 = document.getElementById("ph");
 
     output1.innerHTML = slider1.value; // Display the default slider value
+    output1a.innerHTML = slider1.value;
 
     // Update the current slider value (each time you drag the slider handle)
     slider1.oninput = function() {
         output1.innerHTML = this.value;
+        output1a.innerHTML = this.value;
     }
 
-    var slider2 = document.getElementById("fAcidity");
     var output2 = document.getElementById("demo2");
+    var output2a = document.getElementById("demo2a");
+    var slider2 = document.getElementById("fAcidity");
 
     output2.innerHTML = slider2.value; // Display the default slider value
+    output2a.innerHTML = slider2.value;
 
     // Update the current slider value (each time you drag the slider handle)
     slider2.oninput = function() {
         output2.innerHTML = this.value;
+        output2a.innerHTML = this.value;
     }
     var output3 = document.getElementById("demo3");
+    var output3a = document.getElementById("demo3a");
     var slider3 = document.getElementById("vAcidity");
 
     output3.innerHTML = slider3.value; // Display the default slider value
+    output3a.innerHTML = slider3.value;
 
     // Update the current slider value (each time you drag the slider handle)
     slider3.oninput = function() {
         output3.innerHTML = this.value;
+        output3a.innerHTML = this.value;
     }
 
     var output4 = document.getElementById("demo4");
+    var output4a = document.getElementById("demo4a");
     var slider4 = document.getElementById("citric");
 
     output4.innerHTML = slider4.value; // Display the default slider value
+    output4a.innerHTML = slider4.value;
 
     // Update the current slider value (each time you drag the slider handle)
     slider4.oninput = function() {
         output4.innerHTML = this.value;
+        output4a.innerHTML = this.value;
     }
 
     var output5 = document.getElementById("demo5");
+    var output5a = document.getElementById("demo5a");
     var slider5 = document.getElementById("rs");
 
     output5.innerHTML = slider5.value; // Display the default slider value
+    output5a.innerHTML = slider5.value;
 
     // Update the current slider value (each time you drag the slider handle)
     slider5.oninput = function() {
         output5.innerHTML = this.value;
+        output5a.innerHTML = this.value;
     }
 
     var output6 = document.getElementById("demo6");
+    var output6a = document.getElementById("demo6a");
     var slider6 = document.getElementById("fsd");
 
     output6.innerHTML = slider6.value; // Display the default slider value
+    output6a.innerHTML = slider6.value;
 
     // Update the current slider value (each time you drag the slider handle)
     slider6.oninput = function() {
         output6.innerHTML = this.value;
+        output6a.innerHTML = this.value;
     }
 
     var output7 = document.getElementById("demo7");
+    var output7a = document.getElementById("demo7a");
     var slider7 = document.getElementById("tsd");
 
     output7.innerHTML = slider7.value; // Display the default slider value
+    output7a.innerHTML = slider7.value;
 
     // Update the current slider value (each time you drag the slider handle)
     slider7.oninput = function() {
         output7.innerHTML = this.value;
+        output7a.innerHTML = this.value;
     }
 
     var output8 = document.getElementById("demo8");
+    var output8a = document.getElementById("demo8a");
     var slider8 = document.getElementById("sulphates");
 
     output8.innerHTML = slider8.value; // Display the default slider value
+    output8a.innerHTML = slider8.value;
 
     // Update the current slider value (each time you drag the slider handle)
     slider8.oninput = function() {
         output8.innerHTML = this.value;
+        output8a.innerHTML = this.value;
     }
 
     var output9 = document.getElementById("demo9");
+    var output9a = document.getElementById("demo9a");
     var slider9 = document.getElementById("chloride");
 
     output9.innerHTML = slider9.value; // Display the default slider value
+    output9a.innerHTML = slider9.value;
 
     // Update the current slider value (each time you drag the slider handle)
     slider9.oninput = function() {
         output9.innerHTML = this.value;
+        output9a.innerHTML = this.value;
     }
 
     var output10 = document.getElementById("demo10");
+    var output10a = document.getElementById("demo10a");
     var slider10 = document.getElementById("density");
 
     output10.innerHTML = slider10.value; // Display the default slider value
+    output10a.innerHTML = slider10.value;
 
     // Update the current slider value (each time you drag the slider handle)
     slider10.oninput = function() {
         output10.innerHTML = this.value;
+        output10a.innerHTML = this.value;
     }
 
     var output11 = document.getElementById("demo11");
+    var output11a = document.getElementById("demo11a");
     var slider11 = document.getElementById("alcohol");
 
     output11.innerHTML = slider11.value; // Display the default slider value
+    output11a.innerHTML = slider11.value;
 
     // Update the current slider value (each time you drag the slider handle)
     slider11.oninput = function() {
         output11.innerHTML = this.value;
+        output11a.innerHTML = this.value;
     }
+
+    // function choices() {
+    //     var choice = []
+    //     choice =
+    // }
 
 })(jQuery);

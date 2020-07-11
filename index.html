@@ -70,7 +70,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle page-scroll" href="#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DETAILS</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="template.html"><span class="item-text">VISUALIZATION 1</span></a>
+                        <a class="dropdown-item" href="template.html"><span class="item-text">CREATE YOUR OWN WINE</span></a>
                         <div class="dropdown-items-divide-hr"></div>
                         <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">ANALYSIS</span></a>
                     </div>
@@ -259,7 +259,7 @@
                         <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-cog"></i>PREPARING THE DATA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-binoculars"></i>LINEAR REGRESSION</a>
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-binoculars"></i>LOGISTIC REGRESSION</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-search"></i>NAIVE BAYES ANALYSIS</a>
@@ -281,8 +281,8 @@
                                     <div class="card left-pane first">
                                         <div class="card-body">
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">CLEANING THE DATA</h4>
-                                                <p>The first thing we needed to do was clean the data- we removed any correlated and null values.</p>
+                                                <h4 class="card-title">INITIAL CLEANING OF THE DATA</h4>
+                                                <p>The first thing we needed to do was clean the data- we removed any correlated values</p>
                                             </div>
                                             <div class="card-icon">
                                                 <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
@@ -292,8 +292,8 @@
                                     <div class="card left-pane">
                                         <div class="card-body">
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">Visual Editor</h4>
-                                                <p>Leno provides a well designed and ergonomic visual editor for you to edit your notes and input data</p>
+                                                <h4 class="card-title">SECONDARY CLEANING OF THE DATA</h4>
+                                                <p>We then removed all of the null values to make sure we had a valid data set.</p>
                                             </div>
                                             <div class="card-icon">
                                                 <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
@@ -303,8 +303,8 @@
                                     <div class="card left-pane">
                                         <div class="card-body">
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">Refined Options</h4>
-                                                <p>Each option packaged in the app's menus is provided in order to improve your personal development status</p>
+                                                <h4 class="card-title">CLASSIFICATION</h4>
+                                                <p>We added a conditional to the quality of the wine to define it as good, fair, or excellent</p>
                                             </div>
                                             <div class="card-icon">
                                                 <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
@@ -328,8 +328,8 @@
                                                 <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
                                             </div>
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">Calendar Input</h4>
-                                                <p>Schedule your appointments, meetings and periodical evaluations using the provided in-app calendar option</p>
+                                                <h4 class="card-title">OUTLIERS</h4>
+                                                <p>We looked at the outliers in the data to make sure they wouldn't taint the results</p>
                                             </div>
                                         </div>
                                     </div>
@@ -339,8 +339,8 @@
                                                 <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
                                             </div>
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">Easy Reading</h4>
-                                                <p>Reading focus mode for long form articles, ebooks and other materials which involve large text areas</p>
+                                                <h4 class="card-title">SCALING</h4>
+                                                <p>We used the scaling function to make sure the model would be able to successfully interpret the data.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -350,8 +350,9 @@
                                                 <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
                                             </div>
                                             <div class="text-wrapper">
-                                                <h4 class="card-title">Good Foundation</h4>
-                                                <p>Get a solid foundation for your self development efforts. Try Leno mobile app for any mobile platform</p>
+                                                <h4 class="card-title">CHOOSING THE FEATURES</h4>
+                                                <p>8 of the features accounted for 90% of the variation- these are the features we used in our model. For more details, check out the data on our <a class="turquoise" href="privacy-policy.html">ANALYSIS PAGE.</a>.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -373,16 +374,14 @@
 
                                 <!-- Image Pane -->
                                 <div class="col-md-4">
-                                    <img class="img-fluid" src="images/features-iphone-2.png" alt="alternative">
+                                    <img class="img-fluid" src="images/wrench.png" alt="alternative">
                                 </div>
                                 <!-- end of image pane -->
 
                                 <!-- Text And Icon Cards Area -->
                                 <div class="col-md-8">
                                     <div class="text-area">
-                                        <h3>Track Result Based On Your</h3>
-                                        <p>After you've configured the app and settled on the data gathering techniques you can not start the information trackers and start collecting those <a class="turquoise" href="#your-link">interesting details</a>.
-                                            You can always change them.</p>
+                                        <img class="img-fluid" src="images/linear.png" alt="alternative">
                                     </div>
                                     <!-- end of text-area -->
 
@@ -392,8 +391,8 @@
                                                 <i class="fas fa-cube"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Good Foundation</h4>
-                                                <p>Get a solid foundation for your self development efforts. Try Leno mobile app for any mobile platform</p>
+                                                <h4 class="card-title">Why we chose it</h4>
+                                                <p>Blah Blah Blah</p>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -401,8 +400,8 @@
                                                 <i class="far fa-bookmark"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Easy Reading</h4>
-                                                <p>Reading focus mode for long form articles, ebooks and other materials which involve large text areas</p>
+                                                <h4 class="card-title">The model we picked</h4>
+                                                <p>blah blah</p>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -410,8 +409,8 @@
                                                 <i class="far fa-calendar-check"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Calendar Input</h4>
-                                                <p>Schedule your appointments, meetings and periodical evaluations using the provided in-app calendar option</p>
+                                                <h4 class="card-title">Running The Regression</h4>
+                                                <p>We used 75% of the data to train the model, and 25% to test. The result was a 98.5% accuracy. </p>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -419,8 +418,8 @@
                                                 <i class="far fa-file-code"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Visual Editor</h4>
-                                                <p>Leno provides a well designed and ergonomic visual editor for you to edit your notes and input data</p>
+                                                <h4 class="card-title">What We Can Surmise</h4>
+                                                <p>blah blah blah</p>
                                             </div>
                                         </div>
                                     </div>
@@ -450,8 +449,8 @@
                                                 <i class="far fa-calendar-check"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Calendar Input</h4>
-                                                <p>Schedule your appointments, meetings and periodical evaluations using the provided in-app calendar option</p>
+                                                <h4 class="card-title">Naive Bayes</h4>
+                                                <p>a little blurb</p>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -459,8 +458,8 @@
                                                 <i class="far fa-file-code"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Visual Editor</h4>
-                                                <p>Leno provides a well designed and ergonomic visual editor for you to edit your notes and input data</p>
+                                                <h4 class="card-title">Why we chose it</h4>
+                                                <p>I'll let you know</p>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -468,8 +467,8 @@
                                                 <i class="fas fa-cube"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Good Foundation</h4>
-                                                <p>Get a solid foundation for your self development efforts. Try Leno mobile app for any mobile platform</p>
+                                                <h4 class="card-title">Running the test</h4>
+                                                <p>stuff goes here</p>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -477,16 +476,15 @@
                                                 <i class="far fa-bookmark"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Easy Reading</h4>
-                                                <p>Reading focus mode for long form articles, ebooks and other materials which involve large text areas</p>
+                                                <h4 class="card-title">What we can surmise</h4>
+                                                <p>I'll get back to you Tuesday?</p>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- end of icon cards area -->
 
                                     <div class="text-area">
-                                        <h3>Monitoring Tools Evaluation</h3>
-                                        <p>Monitor the evolution of your finances and health state using tools integrated in Leno. The generated real time reports can be filtered based on any <a class="turquoise" href="#your-link">desired criteria</a>.</p>
+                                        <img class="img-fluid" src="images/nb.png" alt="alternative">
                                     </div>
                                     <!-- end of text-area -->
                                 </div>
@@ -495,7 +493,7 @@
 
                                 <!-- Image Pane -->
                                 <div class="col-md-4">
-                                    <img class="img-fluid" src="images/features-iphone-3.png" alt="alternative">
+                                    <img class="img-fluid" src="images/wrench.png" alt="alternative">
                                 </div>
                                 <!-- end of image pane -->
 
@@ -554,13 +552,13 @@
                         <div class="text-container">
                             <h3>PRACTICAL APPLICATION</h3>
                             <p>Now that we have our predictive model, now what?</p>
-                            <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">DETAILS</a>
+                            <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">HERE'S WHAT</a>
                         </div>
                         <!-- end of text-container -->
                     </div>
                     <!-- end of col -->
                     <div class="col-lg-6">
-                        <img class="img-fluid" src="images/question.png" alt="alternative">
+                        <img class="img-fluid" src="images/question.jpg" alt="alternative">
                     </div>
                     <!-- end of col -->
                 </div>
@@ -580,42 +578,42 @@
         <div class="row">
             <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
             <div class="col-lg-6">
-                <img class="img-fluid" src="images/details-lightbox-1.png" alt="alternative">
+                <img class="img-fluid" src="images/lightbulb3.png" alt="alternative">
             </div>
             <div class="col-lg-6">
                 <h3>What we Found</h3>
                 <hr>
                 <p>Y model was the most precise model at blah%</p>
-                <h4>User Feedback</h4>
-                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity levels.</p>
-                <p>You should definitely give it a try when you need a good app.</p>
+                <h4>Something</h4>
+                <p>I have no idea what to put here yet</p>
+                <p>But it should be really thoughtful</p>
                 <table>
                     <tr>
                         <td class="icon-cell"><i class="fas fa-desktop"></i></td>
-                        <td>Responsive layout</td>
+                        <td>point #1</td>
                     </tr>
                     <tr>
                         <td class="icon-cell"><i class="fas fa-bullhorn"></i></td>
-                        <td>Distinctive CTAs</td>
+                        <td>Point #2</td>
                     </tr>
                     <tr>
                         <td class="icon-cell"><i class="fas fa-image"></i></td>
-                        <td>Image gallery slider</td>
+                        <td>Point #3</td>
                     </tr>
                     <tr>
                         <td class="icon-cell"><i class="fas fa-envelope"></i></td>
-                        <td>Contact forms</td>
+                        <td>Data info #1</td>
                     </tr>
                     <tr>
                         <td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td>
-                        <td>FontAwesome icons</td>
+                        <td>Data Info #2</td>
                     </tr>
                     <tr>
                         <td class="icon-cell"><i class="fas fa-code"></i></td>
-                        <td>Well-structured code</td>
+                        <td>Data info #3</td>
                     </tr>
                 </table>
-                <a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
+                <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
             </div>
         </div>
         <!-- end of row -->
@@ -687,17 +685,19 @@
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="images/top_25_over_time.jpg" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/top_25_over_time.jpg" alt="alternative">
+                                    <a href="images/correlation.jpg" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/correlation.jpg" alt="alternative">
                                     </a>
+                                    <p>The correlation matrix of our data.</p>
                                 </div>
                                 <!-- end of slide -->
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
-                                    <a href="images/Overall_breakdown.jpg" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/Overall_breakdown.jpg" alt="alternative">
+                                    <a href="images/variation.jpg" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="images/variation.jpg" alt="alternative">
                                     </a>
+                                    <p>Mapping the components contributing to the variation in our dataset. X is the feature number, Y is the contributing factor</p>
                                 </div>
                                 <!-- end of slide -->
 
