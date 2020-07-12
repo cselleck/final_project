@@ -228,7 +228,7 @@
                                     <div class="basic-2">
                                         <h2 class="card-title">YOUR RESULTS:</h2>
                                         <h2>Let's see how you did!</h2>
-                                        <h4>Your choices are:</h4>
+                                        <h4>YOUR CHOICES ARE:</h4>
                                         <p>ph: <span id="demo1a"></span></p>
                                         <p>Fixed Acidity: <span id="demo2a"></span></p>
                                         <p>Volatile Acidity: <span id="demo3a"></span></p>
@@ -243,11 +243,14 @@
 
                                         <p></p>
                                         <p></p>
-                                        <h4>Our predictive model gave this a score of:</h4>
+                                        <h4>OUR PREDICTIVE MODEL GAVE THIS A SCORE OF:</h4>
                                         <p>----predictive model score goes here.</p>
                                         <p></p>
-                                        <h4>We predict that your wine will be:</h4>
-                                        <p>----Wine rating here</p>
+                                        <h4>WE PREDICT THAT YOUR WINE WILL BE:</h4>
+                                        <p><span id="result"></span>----Wine rating here</p>
+                                        <div class="card-icon">
+                                            <i class="fas fa-smile-wink    "></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- end of image pane -->
@@ -316,7 +319,7 @@
                                     </div>
                                 </div>
                                 <!-- end of icon cards pane -->
-                                <input type="submit" onclick="choices()" class="btn-solid-lg" text-align="center">
+                                <button class="btn-solid-lg2" class="fab fa-google-play" id="choices">SUBMIT</button>
                                 <!-- <class class="fa fa-play"></class> -->
                             </div>
                             <!-- end of row -->
@@ -368,6 +371,10 @@
     <!-- Morphtext rotating text in the header -->
     <script src="js/validator.min.js"></script>
     <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <!-- TensorFlow for the model processing -->
+    <!-- <script src="data/model.json" type="module"></script> -->
+    <!-- Importing the prediction model -->
     <script src="js/scripts.js"></script>
     <!-- Custom scripts -->
 </body>

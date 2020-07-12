@@ -346,13 +346,45 @@
 
     // Update the current slider value (each time you drag the slider handle)
     slider11.oninput = function() {
-        output11.innerHTML = this.value;
-        output11a.innerHTML = this.value;
+            output11.innerHTML = this.value;
+            output11a.innerHTML = this.value;
+        }
+        //  The order our predictive model needs the data to be in 
+        // 'fixed acidity','volatile acidity', 'citric acid', 'residual sugar',
+        // 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density',
+        // 'ph', 'sulphates', 'alcohol'
+
+    document.getElementById("choices").addEventListener("click", runChoices);
+
+    // import * as tf from '@tensorflow/tfjs';
+
+    // const model = await tf.loadLayersModel('data/model.json');
+
+
+    function runChoices() {
+        var choice = [];
+        choice = [parseFloat(document.getElementById("fAcidity").value), parseFloat(document.getElementById("vAcidity").value), parseFloat(document.getElementById("citric").value), parseFloat(document.getElementById("rs").value), parseFloat(document.getElementById("chloride").value), parseFloat(document.getElementById("fsd").value), parseFloat(document.getElementById("tsd").value), parseFloat(document.getElementById("density").value), parseFloat(document.getElementById("ph").value), parseFloat(document.getElementById("sulphates").value), parseFloat(document.getElementById("alcohol").value)];
+        console.log(choice);
+        // const prediction = model.predict(choice);
+        // console.log(prediction[0]);
     }
 
-    // function choices() {
-    //     var choice = []
-    //     choice =
-    // }
+    var animateButton = function(e) {
+
+        e.preventDefault;
+        //reset animation
+        e.target.classList.remove('animate');
+
+        e.target.classList.add('animate');
+        setTimeout(function() {
+            e.target.classList.remove('animate');
+        }, 700);
+    };
+
+    var bubblyButtons = document.getElementsByClassName("btn-solid-lg");
+
+    for (var i = 0; i < bubblyButtons.length; i++) {
+        bubblyButtons[i].addEventListener('click', animateButton, false);
+    }
 
 })(jQuery);
