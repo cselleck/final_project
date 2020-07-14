@@ -470,7 +470,7 @@
 
     // import * as tf from '@tensorflow/tfjs';
 
-    // const model = await tf.loadLayersModel('data/model.json');
+    // const model = await tf.loadLayersModel('data/finalized_model.json');
 
 
     function runChoices() {
@@ -479,6 +479,8 @@
         console.log(choice);
         // const prediction = model.predict(choice);
         // console.log(prediction[0]);
+        // var pred = document.getElementById("result");
+        // pred.innerHTML = prediction[0];
     }
 
 
