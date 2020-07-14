@@ -282,7 +282,7 @@
                                         <div class="card-body">
                                             <div class="text-wrapper">
                                                 <h4 class="card-title">INITIAL CLEANING OF THE DATA</h4>
-                                                <p>The first thing we needed to do was clean the data- we removed any correlated values</p>
+                                                <p>The first thing we needed to do was clean the data- we removed any correlated values. The correlation table in our data breakdown below will summarize what we found.</p>
                                             </div>
                                             <div class="card-icon">
                                                 <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
@@ -293,7 +293,7 @@
                                         <div class="card-body">
                                             <div class="text-wrapper">
                                                 <h4 class="card-title">SECONDARY CLEANING OF THE DATA</h4>
-                                                <p>We then removed all of the null values to make sure we had a valid data set.</p>
+                                                <p>We then removed all of the null values to make sure we had a valid data set. As it turns out, there weren't any, so we were able to use all the data entries in our data set.</p>
                                             </div>
                                             <div class="card-icon">
                                                 <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
@@ -304,7 +304,8 @@
                                         <div class="card-body">
                                             <div class="text-wrapper">
                                                 <h4 class="card-title">CLASSIFICATION</h4>
-                                                <p>We added a conditional to the quality of the wine to define it as good, fair, or excellent</p>
+                                                <p>We added a conditional to the quality of the wine to define it as good or bad. The initial data set had a rating of 3-8 to quantify the quality of the wine- we redefined that classification in order to improve
+                                                    the accuracy of our results. </p>
                                             </div>
                                             <div class="card-icon">
                                                 <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
@@ -329,7 +330,7 @@
                                             </div>
                                             <div class="text-wrapper">
                                                 <h4 class="card-title">OUTLIERS</h4>
-                                                <p>We looked at the outliers in the data to make sure they wouldn't taint the results</p>
+                                                <p>We looked at the outliers in the data to make sure they wouldn't taint the results. The data breakdown includes a chart summarizing what we found.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -340,7 +341,7 @@
                                             </div>
                                             <div class="text-wrapper">
                                                 <h4 class="card-title">SCALING</h4>
-                                                <p>We used the scaling function to make sure the model would be able to successfully interpret the data.</p>
+                                                <p>We used the scaling function to make sure the model would be able to successfully interpret the data. The code we used for this is included in the analysis page - the link is below.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -351,7 +352,8 @@
                                             </div>
                                             <div class="text-wrapper">
                                                 <h4 class="card-title">CHOOSING THE FEATURES</h4>
-                                                <p>8 of the features accounted for 90% of the variation- these are the features we used in our model. For more details, check out the data on our <a class="turquoise" href="privacy-policy.html">ANALYSIS PAGE.</a>.
+                                                <p>8 of the features accounted for 90% of the variation- but ultimately, we decided to include all features in our model in order to get the most accurate outcome. For more details, check out the data on our
+                                                    <a class="turquoise" href="privacy-policy.html">ANALYSIS PAGE.</a>.
                                                 </p>
                                             </div>
                                         </div>
@@ -391,8 +393,9 @@
                                                 <i class="fas fa-cube"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Why we chose it</h4>
-                                                <p>Blah Blah Blah</p>
+                                                <h4 class="card-title">WHAT IS LOGIGISTIC REGRESSION</h4>
+                                                <p>Logistic regression is the appropriate regression analysis to conduct when the dependent variable is dichotomous (binary). Like all regression analyses, the logistic regression is a predictive analysis.
+                                                    Logistic regression is used to describe data and to explain the relationship between one dependent binary variable and one or more nominal, ordinal, interval or ratio-level independent variables.</p>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -400,8 +403,8 @@
                                                 <i class="far fa-bookmark"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">The model we picked</h4>
-                                                <p>blah blah</p>
+                                                <h4 class="card-title">WHY WE RAN THIS MODEL</h4>
+                                                <p>We wanted to predict if a given set of variables would result in a good or a bad wine - a binary result. With the data we had available, it seemed like - if you will forgive the pun- a logical choice.</p>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -409,7 +412,7 @@
                                                 <i class="far fa-calendar-check"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Running The Regression</h4>
+                                                <h4 class="card-title">RUNNING THE MODEL</h4>
                                                 <p>We used 75% of the data to train the model, and 25% to test. The result was a 98.5% accuracy. </p>
                                             </div>
                                         </div>
@@ -418,8 +421,9 @@
                                                 <i class="far fa-file-code"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">What We Can Surmise</h4>
-                                                <p>blah blah blah</p>
+                                                <h4 class="card-title">LIMITATIONS OF THIS ANALYSIS</h4>
+                                                <p>Since it is a binary analysis, we had to limit our findings to 2- good wine or bad. Since this had the better accuracy, we decided in the end to use this model. Ideally, we would have liked to have returned
+                                                    a more refined result.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -449,8 +453,10 @@
                                                 <i class="far fa-calendar-check"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Naive Bayes</h4>
-                                                <p>a little blurb</p>
+                                                <h4 class="card-title">NAIVE BAYES</h4>
+                                                <p>A Naive Bayes classifier is a probabilistic machine learning model that’s used for classification task. The crux of the classifier is based on the Bayes theorem. Using Bayes theorem, we can find the probability
+                                                    of A happening, given that B has occurred. Here, B is the evidence and A is the hypothesis. The assumption made here is that the predictors/features are independent. That is presence of one particular
+                                                    feature does not affect the other. Hence it is called naive.</p>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -458,8 +464,9 @@
                                                 <i class="far fa-file-code"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Why we chose it</h4>
-                                                <p>I'll let you know</p>
+                                                <h4 class="card-title">WHY WE RAN THIS MODEL</h4>
+                                                <p>The naive-bayes model can return an array of results based on the data given- meaning we could classify the quality of the wines in more categories than the logistic regression. We looked at returning results
+                                                    that were more specific- excellent, above average, fair, below average, poor. Ultimately, the model proved a bit less accurate, so we went with the logistic regression.</p>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -467,8 +474,8 @@
                                                 <i class="fas fa-cube"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">Running the test</h4>
-                                                <p>stuff goes here</p>
+                                                <h4 class="card-title">RUNNING THE MODEL</h4>
+                                                <p>We used x% of the data to train the model, and y% to test. The result was a blah% accuracy.</p>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -476,8 +483,8 @@
                                                 <i class="far fa-bookmark"></i>
                                             </div>
                                             <div class="card-body">
-                                                <h4 class="card-title">What we can surmise</h4>
-                                                <p>I'll get back to you Tuesday?</p>
+                                                <h4 class="card-title">LIMITATIONS OF THIS ANALYSIS</h4>
+                                                <p>With the data we gave the model, the logistic regression proved to be more accurate in it's results. We were forced to choose between higher accuracy versus higher diversification. We chose accuracy. </p>
                                             </div>
                                         </div>
                                     </div>
