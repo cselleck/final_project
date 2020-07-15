@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Free mobile app HTML landing page template to help you build a great online presence for your app which will convert visitors into users">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="" />
+    <!-- website name -->
+    <meta property="og:site" content="" />
+    <!-- website link -->
+    <meta property="og:title" content="" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" />
+    <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" />
+    <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>DATA ANALYSIS</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700" rel="stylesheet">
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/fontawesome-all.css" rel="stylesheet">
+    <link href="static/css/swiper.css" rel="stylesheet">
+    <link href="static/css/magnific-popup.css" rel="stylesheet">
+    <link href="static/css/styles.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <a class="navbar-brand logo-text page-scroll" href="{{ url_for('index') }}">HOME</a>
+
+        <!-- Image Logo -->
+        <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{{ url_for('index') }}#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{{ url_for('index') }}#features">METHODOLOGY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="{{ url_for('index') }}#preview">DATA BREAKDOWN</a>
+                </li>
+
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="{{ url_for('index') }}#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DETAILS</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ url_for('template') }}"><span class="item-text">CREATE YOUR OWN WINE</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="{{ url_for('privacy_policy') }}"><span class="item-text">DATA ANALYSIS</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+            </ul>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- end of navbar -->
+
+
+    <!-- Header -->
+    <header id="header" class="ex-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>PROJECT ANALYSIS</h1>
+                </div>
+                <!-- end of col -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container -->
+    </header>
+    <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="{{ url_for('index') }}">HOME</a><i class="fa fa-angle-double-right"></i><span>Page TBD</span>
+                    </div>
+                    <!-- end of breadcrumbs -->
+                </div>
+                <!-- end of col -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container -->
+    </div>
+    <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+
+
+    <!-- Privacy Content -->
+    <div class="ex-basic-2">
+        <div class="container">
+            <div class="header">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="text-container">
+                            <h3>The Madness to our Methods</h3>
+                            <p> </p>
+                            <p> </p>
+
+                            <div class="text-container">
+
+                                <h3>Walk-through of our coding</h3>
+                                <img class="img-fluid" src="static/images/initial_data.jpg" alt="alternative">
+                                <p>To begin, we had to look at the data to see what we could learn about it. Unless you are a winemaker, the features in this data set are sanskrit.</p>
+                                <p>After an extended Google session, we had an understanding of what these values mean. The first scroll pane is the fruits of our research:</p>
+                                <ol class="li-space-lg">
+                                    <li>ph - Winemakers use pH as a way to measure ripeness in relation to acidity. Low pH wines will taste tart and crisp, while higher pH wines are more susceptible to bacterial growth.</li>
+                                    <li>Citric Acid - Citric acid is most commonly used as an acid supplement during the fermentation process to help winemakers boost the acidity of their wine especially grapes grown in warmer climates. It can also be used
+                                        as a stabilizer to prevent ferric hazes.</li>
+                                    <li>Chlorides - The level of Chloride and sodium ions in wines essentially depends on the geographic, geologic and climatic conditions of vine culture. As a general rule, the levels of these ions are low</li>
+                                    <li>Sulphates - Sulfites in wine are chemicals used as preservatives to prevent browning and discoloration in foods and drinks. For wine making, sulfites, also known as sulphates, have been used for centuries.</li>
+                                    <li>Residual Sugar - Residual Sugar (or RS) is from natural grape sugars leftover in a wine after the alcoholic fermentation finishes. A dry wine will have the least amount of RS, while a sweet wine will have the most.</li>
+                                    <li>Density - Density is defined as the mass, or weight, per volume of a wine. The density of wine is primarily determined by the concentration of alcohol, sugar, glycerol, and other dissolved solids.</li>
+                                    <li>Alcohol Level - Our last attribute is alcohol level. I assume this one needs no explanation.</li>
+                                </ol>
+                                <p>Now that we know what the data means, we can begin to build our prediction model.</p>
+                            </div>
+                            <!-- end of text-container -->
+                            <div class="text-container">
+                                <h3>TABLEAU ANALYSIS</h3>
+                                <p>Don's stuff goes Here</p>
+                                <img class="img-fluid" src="static/images/tab-alcohol.jpg" alt="alternative">
+                                <p>with Tableau pictures and an analysis</p>
+                                <p>Don's stuff goes Here</p>
+                                <img class="img-fluid" src="static/images/tab-chlorides.jpg" alt="alternative">
+                                <p>with Tableau pictures and an analysis</p>
+                                <p>Don's stuff goes Here</p>
+                                <img class="img-fluid" src="static/images/tab-citric.jpg" alt="alternative">
+                                <p>with Tableau pictures and an analysis</p>
+                                <p>Don's stuff goes Here</p>
+                                <img class="img-fluid" src="static/images/tab-density.jpg" alt="alternative">
+                                <p>with Tableau pictures and an analysis</p>
+                                <p>Don's stuff goes Here</p>
+                                <img class="img-fluid" src="static/images/tab-facidity.jpg" alt="alternative">
+                                <p>with Tableau pictures and an analysis</p>
+                                <p>Don's stuff goes Here</p>
+                                <img class="img-fluid" src="static/images/tab-fsd.jpg" alt="alternative">
+                                <p>with Tableau pictures and an analysis</p>
+                                <p>Don's stuff goes Here</p>
+                                <img class="img-fluid" src="static/images/tab-ph.jpg" alt="alternative">
+                                <p>with Tableau pictures and an analysis</p>
+                                <p>Don's stuff goes Here</p>
+                                <img class="img-fluid" src="static/images/tab-rs.jpg" alt="alternative">
+                                <p>with Tableau pictures and an analysis</p>
+                                <p>Don's stuff goes Here</p>
+                                <img class="img-fluid" src="static/images/tab-sulphates.jpg" alt="alternative">
+                                <p>with Tableau pictures and an analysis</p>
+                                <p>Don's stuff goes Here</p>
+                                <img class="img-fluid" src="static/images/tab-tsd.jpg" alt="alternative">
+                                <p>with Tableau pictures and an analysis</p>
+                                <p>Don's stuff goes Here</p>
+                                <img class="img-fluid" src="static/images/tab-vacidity.jpg" alt="alternative">
+                                <p>with Tableau pictures and an analysis</p>
+                            </div>
+                            <!-- end of text container -->
+
+                            <div class="text-container">
+                                <h3>FUTURE ENHANCEMENTS</h3>
+                                <p>What we would like</p>
+                                <p>If we had more than 10 days</p>
+                            </div>
+                            <!-- end of text container -->
+
+                            <div class="text-container">
+                                <h3>LIMITS AND LIABILITIES IN OUR MODEL</h3>
+                                <p class="mb-5">discuss</p>
+                            </div>
+                            <!-- end of text-container -->
+
+
+                            <a class="btn-outline-reg back" href="{{ url_for('index') }}">BACK</a>
+                        </div>
+                        <!-- end of col-->
+                    </div>
+                    <!-- end of row -->
+                </div>
+            </div>
+            <!-- end of container -->
+        </div>
+    </div>
+    <!-- end of ex-basic-2 -->
+    <!-- end of privacy content -->
+    <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
+            &copy; Copyright Clay, Don, & Mac, LLC.
+        </p>
+    </footer>
+    <!-- End of footer -->
+
+
+    <!-- Scripts -->
+    <script src="static/js/jquery.min.js"></script>
+    <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="static/js/popper.min.js"></script>
+    <!-- Popper tooltip library for Bootstrap -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <!-- Bootstrap framework -->
+    <script src="static/js/jquery.easing.min.js"></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="static/js/swiper.min.js"></script>
+    <!-- Swiper for image and text sliders -->
+    <script src="static/js/jquery.magnific-popup.js"></script>
+    <!-- Magnific Popup for lightboxes -->
+    <script src="static/js/morphext.min.js"></script>
+    <!-- Morphtext rotating text in the header -->
+    <script src="static/js/validator.min.js"></script>
+    <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <!-- TensorFlow for the model processing -->
+    <script src="static/js/scripts.js"></script>
+    <!-- Custom scripts -->
+
+</body>
+
+</html>

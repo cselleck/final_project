@@ -1,42 +1,48 @@
-from flask import Flask, render_template, request, redirect
-from flask_pymongo import PyMongo
-import recipe
 
-
+import joblib
+import pandas as pd
+import numpy as np
+from flask import Flask, request, jsonify, render_template
+import pickle
 
 app = Flask(__name__)
 
-app.config['MONGO_URI'] = "mongodb://localhost:27017/mars_data"
-#reset mars_data from previous scrape
-mars_data={}
-mongo = PyMongo(app)
 
-# Route to render index.html template using data from Mongo
+# load the model from disk
+#loaded_model = joblib.load('/static/data/finalized_model_joblib.obj')
+
+
+
+@app.route('/divinfo', methods=['POST'])
+def get_divinfo():
+   divinfo = flask.request.get_json()
+   print(divinfo)
+   return flask.jsonify({"result":f'ok'})
+
+
 @app.route("/")
 def index():
+    return render_template("/index.html")
 
-    # Find one record of data from the mongo database
-    mars_data = mongo.db.mars_data.find_one()
+@app.route("/template")
+def template():
+    return render_template("template.html")
 
-    # Return template and data
-    return render_template("index.html", mars_data=mars_data)
+@app.route("/privacy-policy")
+def privacy_policy():
+    return render_template("privacy-policy.html")
 
 
-# Route that will trigger the scrape function
-@app.route("/recipe")
-def scrape():
+@app.route('/predict')
+def predict():
+#use the loaded model to make prediction
+    result = loaded_model.predict(X_test)
+    result_accuracy = loaded_model.score(X_test, y_test)
 
-    # Run the scrape function
-    recipe = mars_scrape.scrape()
-
-    # Update the Mongo database using update and upsert=True
-    mongo.db.mars_data.replace_one({}, mars_data, upsert=True)
-    return redirect("/")
-
-if __name__ == "__main__":
-    app.run(debug=True)
+    return (result, accuracy)
 
 
 
 
-
+if __name__ == '__main__':
+     app.run(debug=True)
