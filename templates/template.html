@@ -160,171 +160,174 @@
                     <!-- Tab -->
                     <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
                         <div class="container">
-                            <div class="row">
+                            <form action="/getdelay" method="POST">
+                                <div class="row">
 
-                                <!-- Icon Cards Pane -->
-                                <div class="col-lg-4">
-                                    <div class="card left-pane first">
-                                        <div class="card-body">
-                                            <div class="text-wrapper">
-                                                <h4 class="card-title">pH</h4>
-                                                <p>Pick the pH level</p>
-                                                <div class="slidecontainer">
-                                                    <input type="range" min="2.6" max="4.3" value="3.5" class="slider5" step="0.01" id="ph">
-                                                    <p>Value: <span id="demo1"></span></p>
+                                    <!-- Icon Cards Pane -->
+                                    <div class="col-lg-4">
+                                        <div class="card left-pane first">
+                                            <div class="card-body">
+                                                <div class="text-wrapper">
+                                                    <h4 class="card-title">pH</h4>
+                                                    <p>Pick the pH level</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="2.6" max="4.3" value="3.5" class="slider5" step="0.01" name="ph" id="ph">
+                                                        <p>Value: <span id="demo1"></span></p>
+                                                    </div>
+                                                    <p>Pick the Fixed Acidity</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="4.5" max="16.5" value="10" class="slider5" step="0.1" name="fAcidity" id="fAcidity">
+                                                        <p>Value: <span id="demo2"></span></p>
+                                                    </div>
+                                                    <p>Pick the Volatile Acidity</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="0.1" max="1.77" value="1.0" class="slider5" step="0.1" name="vAcidity" id="vAcidity">
+                                                        <p>Value: <span id="demo3"></span></p>
+                                                    </div>
                                                 </div>
-                                                <p>Pick the Fixed Acidity</p>
-                                                <div class="slidecontainer">
-                                                    <input type="range" min="4.5" max="16.5" value="10" class="slider5" step="0.1" id="fAcidity">
-                                                    <p>Value: <span id="demo2"></span></p>
-                                                </div>
-                                                <p>Pick the Volatile Acidity</p>
-                                                <div class="slidecontainer">
-                                                    <input type="range" min="0.1" max="1.77" value="1.0" class="slider5" step="0.1" id="vAcidity">
-                                                    <p>Value: <span id="demo3"></span></p>
-                                                </div>
-                                            </div>
 
-                                            <div class="card-icon">
-                                                <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card left-pane">
-                                        <div class="card-body">
-                                            <div class="text-wrapper">
-                                                <h4 class="card-title">Citric Acid</h4>
-                                                <p>Pick the Citric Acid level</p>
-                                                <div class="slidecontainer">
-                                                    <input type="range" min="0.0" max="1.0" value="0.5" class="slider5" step="0.1" id="citric">
-                                                    <p>Value: <span id="demo4"></span></p>
+                                                <div class="card-icon">
+                                                    <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
                                                 </div>
                                             </div>
-                                            <div class="card-icon">
-                                                <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
-                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card left-pane">
-                                        <div class="card-body">
-                                            <div class="text-wrapper">
-                                                <h4 class="card-title">Residual Sugar</h4>
-                                                <p>Pick the Residual Sugar level</p>
-                                                <div class="slidecontainer">
-                                                    <input type="range" min="0.4" max="17.0" value="8.5" class="slider5" step="0.1" id="rs">
-                                                    <p>Value: <span id="demo5"></span></p>
+                                        <div class="card left-pane">
+                                            <div class="card-body">
+                                                <div class="text-wrapper">
+                                                    <h4 class="card-title">Citric Acid</h4>
+                                                    <p>Pick the Citric Acid level</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="0.0" max="1.0" value="0.5" class="slider5" step="0.1" name="citric" id="citric">
+                                                        <p>Value: <span id="demo4"></span></p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-icon">
+                                                    <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
                                                 </div>
                                             </div>
-                                            <div class="card-icon">
-                                                <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
+                                        </div>
+                                        <div class="card left-pane">
+                                            <div class="card-body">
+                                                <div class="text-wrapper">
+                                                    <h4 class="card-title">Residual Sugar</h4>
+                                                    <p>Pick the Residual Sugar level</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="0.4" max="17.0" value="8.5" class="slider5" step="0.1" name="rs" id="rs">
+                                                        <p>Value: <span id="demo5"></span></p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-icon">
+                                                    <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- end of icon cards pane -->
+
+                                    <!-- Image Pane -->
+                                    <div class="col-lg-4">
+                                        <div class="basic-2">
+                                            <h2 class="card-title">YOUR RESULTS:</h2>
+                                            <h2>Let's see how you did!</h2>
+                                            <h4>YOUR CHOICES ARE:</h4>
+                                            <p>pH: <span id="demo1a"></span></p>
+                                            <p>Fixed Acidity: <span id="demo2a"></span></p>
+                                            <p>Volatile Acidity: <span id="demo3a"></span></p>
+                                            <p>Citric Acid: <span id="demo4a"></span></p>
+                                            <p>Residual Sugar: <span id="demo5a"></span></p>
+                                            <p>Free Sulphur Dioxide: <span id="demo6a"></span></p>
+                                            <p>Total Sulphur Dioxide: <span id="demo7a"></span></p>
+                                            <p>Sulphates: <span id="demo8a"></span></p>
+                                            <p>Chloride: <span id="demo9a"></span></p>
+                                            <p>Density: <span id="demo10a"></span></p>
+                                            <p>Alcohol: <span id="demo11a"></span></p>
+
+                                            <p></p>
+                                            <p></p>
+                                            <h4>THIS PREDICTION HAS AN ACCURACY OF: {{ result_accuracy }}</h4>
+                                            <p>----predictive model accuracy goes here.</p>
+                                            <p></p>
+                                            <h4> OUR PREDICTION: {{ prediction }} </h4>
+                                            <p>
+                                                <p> [0] = Bad Wine </p>
+                                            </p>
+                                            <p>
+                                                <p> [1] = Good Wine </p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- end of image pane -->
+
+                                    <!-- Icon Cards Pane -->
+                                    <div class="col-lg-4">
+                                        <div class="card right-pane first">
+                                            <div class="card-body">
+                                                <div class="card-icon">
+                                                    <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
+                                                </div>
+                                                <div class="text-wrapper">
+                                                    <h4 class="card-title">Sulfides</h4>
+                                                    <p>Pick the Free Sulphur dioxide level</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="0" max="80" value="40" class="slider5" step="1" name="fsd" id="fsd">
+                                                        <p>Value: <span id="demo6"></span></p>
+                                                    </div>
+                                                    <p>Pick the Total Sulphur dioxide level</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="5" max="320" value="160" class="slider5" step="5" name="tsd" id="tsd">
+                                                        <p>Value: <span id="demo7"></span></p>
+                                                    </div>
+                                                    <p>Pick the Sulphates level</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="0.3" max="2" value="1.0" class="slider5" step="0.1" name="sulphates" id="sulphates">
+                                                        <p>Value: <span id="demo8"></span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card right-pane">
+                                            <div class="card-body">
+                                                <div class="card-icon">
+                                                    <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
+                                                </div>
+                                                <div class="text-wrapper">
+                                                    <h4 class="card-title">Chlorides</h4>
+                                                    <p>Pick the Chloride level</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="0.01" max=".65" value=".30" class="slider5" step="0.01" name="chloride" id="chloride">
+                                                        <p>Value: <span id="demo9"></span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card right-pane">
+                                            <div class="card-body">
+                                                <div class="card-icon">
+                                                    <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
+                                                </div>
+                                                <div class="text-wrapper">
+                                                    <h4 class="card-title">Miscellaneous</h4>
+                                                    <p>Pick the Density level</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="0.99" max="1.01" value="1.00" class="slider5" step="0.001" name="density" id="density">
+                                                        <p>Value: <span id="demo10"></span></p>
+                                                    </div>
+                                                    <p>Pick the Alcohol level</p>
+                                                    <div class="slidecontainer">
+                                                        <input type="range" min="8.0" max="15.5" value="11.5" class="slider5" step="0.1" name="alcohol" id="alcohol">
+                                                        <p>Value: <span id="demo11"></span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of icon cards pane -->
+                                    <p> <input type="submit" class="btn-solid-lg2" class="fab fa-google-play" id="choices" value="SUBMIT" /> </p>
+                                    <!-- <button href="/predict" class="btn-solid-lg2" class="fab fa-google-play" id="choices">SUBMIT</button> -->
+
                                 </div>
-                                <!-- end of icon cards pane -->
-
-                                <!-- Image Pane -->
-                                <div class="col-lg-4">
-                                    <div class="basic-2">
-                                        <h2 class="card-title">YOUR RESULTS:</h2>
-                                        <h2>Let's see how you did!</h2>
-                                        <h4>YOUR CHOICES ARE:</h4>
-                                        <p>pH: <span id="demo1a"></span></p>
-                                        <p>Fixed Acidity: <span id="demo2a"></span></p>
-                                        <p>Volatile Acidity: <span id="demo3a"></span></p>
-                                        <p>Citric Acid: <span id="demo4a"></span></p>
-                                        <p>Residual Sugar: <span id="demo5a"></span></p>
-                                        <p>Free Sulphur Dioxide: <span id="demo6a"></span></p>
-                                        <p>Total Sulphur Dioxide: <span id="demo7a"></span></p>
-                                        <p>Sulphates: <span id="demo8a"></span></p>
-                                        <p>Chloride: <span id="demo9a"></span></p>
-                                        <p>Density: <span id="demo10a"></span></p>
-                                        <p>Alcohol: <span id="demo11a"></span></p>
-
-                                        <p></p>
-                                        <p></p>
-                                        <h4>OUR PREDICTIVE MODEL GAVE THIS A SCORE OF:</h4>
-                                        <p>----predictive model score goes here.</p>
-                                        <p></p>
-                                        <h4>WE PREDICT THAT YOUR WINE WILL BE:</h4>
-                                        <p><span id="result"></span>----Wine rating here</p>
-                                        <div class="appReturn">
-                                            <i class="fas fa-smile-wink"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end of image pane -->
-
-                                <!-- Icon Cards Pane -->
-                                <div class="col-lg-4">
-                                    <div class="card right-pane first">
-                                        <div class="card-body">
-                                            <div class="card-icon">
-                                                <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
-                                            </div>
-                                            <div class="text-wrapper">
-                                                <h4 class="card-title">Sulfides</h4>
-                                                <p>Pick the Free Sulphur dioxide level</p>
-                                                <div class="slidecontainer">
-                                                    <input type="range" min="0" max="80" value="40" class="slider5" step="1" id="fsd">
-                                                    <p>Value: <span id="demo6"></span></p>
-                                                </div>
-                                                <p>Pick the Total Sulphur dioxide level</p>
-                                                <div class="slidecontainer">
-                                                    <input type="range" min="5" max="320" value="160" class="slider5" step="5" id="tsd">
-                                                    <p>Value: <span id="demo7"></span></p>
-                                                </div>
-                                                <p>Pick the Sulphates level</p>
-                                                <div class="slidecontainer">
-                                                    <input type="range" min="0.3" max="2" value="1.0" class="slider5" step="0.1" id="sulphates">
-                                                    <p>Value: <span id="demo8"></span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card right-pane">
-                                        <div class="card-body">
-                                            <div class="card-icon">
-                                                <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
-                                            </div>
-                                            <div class="text-wrapper">
-                                                <h4 class="card-title">Chlorides</h4>
-                                                <p>Pick the Chloride level</p>
-                                                <div class="slidecontainer">
-                                                    <input type="range" min="0.01" max=".65" value=".30" class="slider5" step="0.01" id="chloride">
-                                                    <p>Value: <span id="demo9"></span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card right-pane">
-                                        <div class="card-body">
-                                            <div class="card-icon">
-                                                <i class="far fa fa-cog fa-spin fa-3x fa-fw"></i>
-                                            </div>
-                                            <div class="text-wrapper">
-                                                <h4 class="card-title">Miscellaneous</h4>
-                                                <p>Pick the Density level</p>
-                                                <div class="slidecontainer">
-                                                    <input type="range" min="0.99" max="1.01" value="1.00" class="slider5" step="0.001" id="density">
-                                                    <p>Value: <span id="demo10"></span></p>
-                                                </div>
-                                                <p>Pick the Alcohol level</p>
-                                                <div class="slidecontainer">
-                                                    <input type="range" min="8.0" max="15.5" value="11.5" class="slider5" step="0.1" id="alcohol">
-                                                    <p>Value: <span id="demo11"></span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end of icon cards pane -->
-                                <div id="runApp">
-                                    <button href="/predict" class="btn-solid-lg2" class="fab fa-google-play" id="choices">SUBMIT</button>
-                                    <!-- <class class="fa fa-play"></class> -->
-                                </div>
-                            </div>
-                            <!-- end of row -->
+                                <!-- end of row -->
+                            </form>
                         </div>
                         <!-- end of container -->
                     </div>
@@ -373,7 +376,7 @@
     <!-- Morphtext rotating text in the header -->
     <script src="static/js/validator.min.js"></script>
     <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script> -->
     <!-- TensorFlow for the model processing -->
     <!-- <script src="data/model.json" type="module"></script> -->
     <!-- Importing the prediction model -->

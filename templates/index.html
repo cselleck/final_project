@@ -353,7 +353,7 @@
                                             <div class="text-wrapper">
                                                 <h4 class="card-title">CHOOSING THE FEATURES</h4>
                                                 <p>8 of the features accounted for 90% of the variation- but ultimately, we decided to include all features in our model in order to get the most accurate outcome. For more details, check out the data on our
-                                                    <a class="turquoise" href="privacy-policy.html">ANALYSIS PAGE.</a>.
+                                                    <a class="turquoise" href="{{ url_for('privacy_policy') }}">ANALYSIS PAGE.</a>.
                                                 </p>
                                             </div>
                                         </div>
@@ -413,7 +413,7 @@
                                             </div>
                                             <div class="card-body">
                                                 <h4 class="card-title">RUNNING THE MODEL</h4>
-                                                <p>We used 75% of the data to train the model, and 25% to test. The result was a 98.5% accuracy. </p>
+                                                <p>We used 75% of the data to train the model, and 25% to test. The result was a 76% accuracy. </p>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -475,7 +475,7 @@
                                             </div>
                                             <div class="card-body">
                                                 <h4 class="card-title">RUNNING THE MODEL</h4>
-                                                <p>We used x% of the data to train the model, and y% to test. The result was a blah% accuracy.</p>
+                                                <p>We used 75% of the data to train the model, and 25% to test. The result was a 74% accuracy.</p>
                                             </div>
                                         </div>
                                         <div class="card">
@@ -535,7 +535,7 @@
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h3>Results</h3>
-                        <p>We discovered that the logistic regression model worked the best, with a 98% accuracy. The Naive Bayes model we used had an accuracy of 96%.</p>
+                        <p>We discovered that the logistic regression model worked the best, with a 76% accuracy. The Naive Bayes model we used had an accuracy of 74%.</p>
                         <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">MORE</a>
                     </div>
                     <!-- end of text-container -->
@@ -590,34 +590,38 @@
             <div class="col-lg-6">
                 <h3>What we Found</h3>
                 <hr>
-                <p>Y model was the most precise model at blah%</p>
-                <h4>Something</h4>
-                <p>I have no idea what to put here yet</p>
-                <p>But it should be really thoughtful</p>
+                <p>The logistic model model was the most precise model at 76%</p>
+                <h4>Observations</h4>
+                <p>Based on our analysis, we have a better understanding of what makes a good wine.</p>
+                <p>Based on the chemical components we looked at:</p>
                 <table>
                     <tr>
                         <td class="icon-cell"><i class="far fa fa-cog fa-spin fa-3x fa-fw"></i></td>
-                        <td>point #1</td>
+                        <td>There is a higher probability of good quality wine, if the alcohol content is >= 12.</td>
                     </tr>
                     <tr>
                         <td class="icon-cell"><i class="far fa fa-cog fa-spin fa-3x fa-fw"></i></td>
-                        <td>Point #2</td>
+                        <td>The probability of good quality wine decreases as alcohol content decreases.</td>
                     </tr>
                     <tr>
                         <td class="icon-cell"><i class="far fa fa-cog fa-spin fa-3x fa-fw"></i></td>
-                        <td>Point #3</td>
+                        <td>Sulphates level increases with the quality of wine.</td>
                     </tr>
                     <tr>
                         <td class="icon-cell"><i class="far fa fa-cog fa-spin fa-3x fa-fw"></i></td>
-                        <td>Data info #1</td>
+                        <td>Citric acid increases as quality of the wine increases.</td>
                     </tr>
                     <tr>
                         <td class="icon-cell"><i class="far fa fa-cog fa-spin fa-3x fa-fw"></i></td>
-                        <td>Data Info #2</td>
+                        <td>An observation can be made that in both types of wine the residual sugar content remains almost the same irrespective of change in alcohol content value.</td>
                     </tr>
                     <tr>
                         <td class="icon-cell"><i class="far fa fa-cog fa-spin fa-3x fa-fw"></i></td>
-                        <td>Data info #3</td>
+                        <td>The precision of predicting good quality wine (1) using logistic regression is 77% whereas prediction of bad quality wine(0) is 74%.</td>
+                    </tr>
+                    <tr>
+                        <td class="icon-cell"><i class="far fa fa-cog fa-spin fa-3x fa-fw"></i></td>
+                        <td>AUC(Area Under Curve) score for the logistic regression is 0.75. AUC score 1 represents perfect classifier, and 0.5 represents a worthless classifier.</td>
                     </tr>
                 </table>
                 <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
@@ -726,6 +730,16 @@
                                     <p>Comparing pH to Wine Quality</p>
                                 </div>
                                 <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="static/images/Data_class_visualization.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="static/images/Data_class_visualization.png" alt="alternative">
+                                    </a>
+                                    <p>Mapping the Features to Quality</p>
+                                </div>
+                                <!-- end of slide -->
+
 
                                 <!-- Slide -->
                                 <div class="swiper-slide">
@@ -889,6 +903,42 @@
                                 </div>
                                 <!-- end of slide -->
 
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="static/images/perfect_wine.jpg" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="static/images/perfect_wine.jpg" alt="alternative">
+                                    </a>
+                                    <p>Analysis to Find the Recipe for the Perfect Wine - Tableau</p>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="static/images/high_correlation.jpg" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="static/images/high_correlation.jpg" alt="alternative">
+                                    </a>
+                                    <p>Which Features Had A High Correlation - Tableau</p>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="static/images/low_correlation.jpg" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="static/images/low_correlation.jpg" alt="alternative">
+                                    </a>
+                                    <p>Which Features Had A Low Correlation - Tableau</p>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="static/images/most_important_factors.jpg" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="static/images/most_important_factors.jpg" alt="alternative">
+                                    </a>
+                                    <p>Which Features Had The Most Impact On Our Findings - Tableau</p>
+                                </div>
+                                <!-- end of slide -->
+
                             </div>
                             <!-- end of swiper-wrapper -->
 
@@ -993,7 +1043,7 @@
     <!-- Morphtext rotating text in the header -->
     <script src="static/js/validator.min.js"></script>
     <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script> -->
     <!-- TensorFlow for the model processing -->
     <script src="static/js/scripts.js"></script>
     <!-- Custom scripts -->

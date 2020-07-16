@@ -481,16 +481,16 @@
         return choice
     }
 
-    let yourdiv = $("runApp").html();
-    $.ajax({
-        type: 'post',
-        url: '/divinfo',
-        data: JSON.stringify(yourdiv),
-        contentType: "application/json; charset=utf-8",
-        success: function(data) {
-            console.log(data);
-        }
-    });
+    // let yourdiv = $("runApp").html();
+    // $.ajax({
+    //     type: 'post',
+    //     url: '/divinfo',
+    //     data: JSON.stringify(yourdiv),
+    //     contentType: "application/json; charset=utf-8",
+    //     success: function(data) {
+    //         console.log(data);
+    //     }
+    // });
 
 
     // const prediction = model.predict(choice);
