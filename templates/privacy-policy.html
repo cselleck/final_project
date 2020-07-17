@@ -147,7 +147,7 @@
                             <div class="text-container">
 
                                 <h3>Walk-through of our coding</h3>
-                                <img class="img-fluid" src="static/images/initial_data.jpg" alt="alternative">
+                                <img class="img-fluid" src="static/images/code1.jpg" alt="alternative">
                                 <p>To begin, we had to look at the data to see what we could learn about it. Unless you are a winemaker, the features in this data set are sanskrit.</p>
                                 <p>After an extended Google session, we had an understanding of what these values mean. The first scroll pane is the fruits of our research:</p>
                                 <ol class="li-space-lg">
@@ -161,6 +161,41 @@
                                     <li>Alcohol Level - Our last attribute is alcohol level. I assume this one needs no explanation.</li>
                                 </ol>
                                 <p>Now that we know what the data means, we can begin to build our prediction model.</p>
+                                <p>We can see that we have 1599 lines of data, with 12 columns.</p>
+                                <img class="img-fluid" src="static/images/code2.jpg" alt="alternative">
+                                <p>Next we look at null values or missing data. In this case, the data is already perfectly cleaned.</p>
+                                We also know that all the values are floats, so we don't have to cast any data from strings.
+                                <img class="img-fluid" src="static/images/code3.jpg" alt="alternative">
+                                <img class="img-fluid" src="static/images/Data_class_visualization.png" alt="alternative">
+                                <p>This is a plot that shows the distribution of the features we used compared to the quality of the wine.</p>
+                                <p>We used this information to decide which features we wanted to look at.</p>
+                                <p>Quality has most values concentrated in the categories of 5,6,7</p>
+                                <img class="img-fluid" src="static/images/code4.jpg" alt="alternative">
+                                <p>A look at the description of the data. </p>
+                                <p>As the prior 2 charts chow, in order for the model to run correctly, we definitely needed to use a scaling function.</p>
+                                <p>The size and range of the different variable is too varied to give a meaningful result.</p>
+                                <img class="img-fluid" src="static/images/code5.jpg" alt="alternative">
+                                <p>We created a correlation matrix to show which values are related to each other.</p>
+                                <p>This doesn't really show anything useful, since it looks like all the variables relate equally to each other. I included it here because it just looks really cool, and reminds me of spirographs I used to do as a kid.</p>
+                                <img class="img-fluid" src="static/images/code6.jpg" alt="alternative">
+                                <p>The next step was making sure none of the variable were too closely correlated to quality.</p>
+                                <ol class="li-space-lg">
+                                    <li>Quality is highly correlated with alcohol.</li>
+                                    <li>Alcohol is negatively correlated with density -0.5.</li>
+                                    <li>Density is highly positively correlated with fixed acidity.</li>
+                                    <li>Volatile acidity is negatively correlated with quality and citric acid.</li>
+                                    <li>Free sulphuric acid is highly correlated with total sulfur dioxide.</li>
+                                    <li>Conclusion can be made that the attributes alcohol, sulphates, citric acid, fixed acidity have maximum correlation with 'quality'</li>
+                                </ol>
+                                <img class="img-fluid" src="static/images/code7.jpg" alt="alternative">
+
+
+
+
+
+
+
+
 
                             </div>
                             <!-- end of text-container -->

@@ -2,8 +2,10 @@
 
 import pandas as pd
 import numpy as np
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, jsonify
 import pickle
+from sklearn.externals import joblib
+
 
 app = Flask(__name__)
 
@@ -11,83 +13,20 @@ app = Flask(__name__)
 #         // 'fixed acidity','volatile acidity', 'citric acid', 'residual sugar',
 #         // 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density',
 #         // 'ph', 'sulphates', 'alcohol'
-# load the model from disk
-#loaded_model = joblib.load('/static/data/finalized_model_joblib.obj')
+
 @app.route('/getdelay',methods=['POST','GET'])
 def get_delay():
     if request.method=='POST':
-        result=request.form
-        fixed_acidity = result['fAcidity']
-        volatile_acidity = result['vAcidity']
-        citric_acid = result['citric']
-        residual_sugar=result['rs']
-        chlorides=result['chloride']
-        free_sulphur_dioxide=result['fsd']
-        total_sulphur_dioxide=result['tsd']
-        density=result['density']
-        ph=result['ph']
-        sulphates=result['sulphates']
-        alcohol=result['alcohol']
-
-
-
-        pkl_file = open('static/data/cat', 'rb')
-        index_dict = pickle.load(pkl_file)
-        cat_vector = np.zeros(len(index_dict))
+        result=request.form.to_dict(flat=True)
+        final_list=[[float(result['fixed_acidity']),float(result['volatile_acidity']),float(result['citric_acid']),float(result['residual_sugar']), float(result['chlorides']), float(result['free_sulphur_dioxide']), float(result['total_sulphur_dioxide']), float(result['density']), float(result['pH']), float(result['sulphates']), float(result['alcohol'])]]
+        final_list=np.array(final_list)
+        print(final_list)
+        lg_from_joblib=joblib.load('static/data/finalized_model_joblib.obj')
+        prediction = lg_from_joblib.predict(final_list)
         
-        try:
-            cat_vector[index_dict['fixed_acidity'+fixed_acidity]] = 1
-        except:
-            pass
-        try:
-            cat_vector[index_dict['volatile_acidity'+volatile_acidity]] = 1
-        except:
-            pass
-        try:
-            cat_vector[index_dict['citric_acid'+citric_acid]] = 1
-        except:
-            pass
-        try:
-            cat_vector[index_dict['residual_sugar'+citric_acid]] = 1
-        except:
-            pass
-        try:
-            cat_vector[index_dict['chlorides'+chlorides]] = 1
-        except:
-            pass
-        try:
-            cat_vector[index_dict['free_sulphur_dioxide'+free_sulphur_dioxide]] = 1
-        except:
-            pass
-        try:
-            cat_vector[index_dict['total_sulphur_dioxide'+total_sulphur_dioxide]] = 1
-        except:
-            pass
-        try:
-            cat_vector[index_dict['density'+density]] = 1
-        except:
-            pass
-        try:
-            cat_vector[index_dict['pH'+ph]] = 1
-        except:
-            pass
-        try:
-            cat_vector[index_dict['sulphates'+sulphates]] = 1
-        except:
-            pass
-        try:
-            cat_vector[index_dict['alcohol'+alcohol]] = 1
-        except:
-            pass
-        
-        pkl_file = open('static/data/finalized_model_joblib.obj', 'rb')
-        logmodel = pickle.load(pkl_file)
-        prediction = logmodel.predict(cat_vector)
-        result_accuracy = logmodel.score(cat_vector)
-        
-        
+        # print(prediction)
+    
         return render_template('template.html',prediction=prediction)
-        return render_template('template.html',result_accuracy=result_accuracy)
 
 
 @app.route("/")
