@@ -162,21 +162,31 @@
                                 </ol>
                                 <p>Now that we know what the data means, we can begin to build our prediction model.</p>
                                 <p>We can see that we have 1599 lines of data, with 12 columns.</p>
+                                <br>
+                                <br>
                                 <img class="img-fluid" src="static/images/code2.jpg" alt="alternative">
                                 <p>Next we look at null values or missing data. In this case, the data is already perfectly cleaned.</p>
-                                We also know that all the values are floats, so we don't have to cast any data from strings.
+                                <p>We also know that all the values are floats, so we don't have to cast any data from strings.</p>
+                                <br>
+                                <br>
                                 <img class="img-fluid" src="static/images/code3.jpg" alt="alternative">
                                 <img class="img-fluid" src="static/images/Data_class_visualization.png" alt="alternative">
                                 <p>This is a plot that shows the distribution of the features we used compared to the quality of the wine.</p>
                                 <p>We used this information to decide which features we wanted to look at.</p>
                                 <p>Quality has most values concentrated in the categories of 5,6,7</p>
+                                <br>
+                                <br>
                                 <img class="img-fluid" src="static/images/code4.jpg" alt="alternative">
                                 <p>A look at the description of the data. </p>
                                 <p>As the prior 2 charts chow, in order for the model to run correctly, we definitely needed to use a scaling function.</p>
                                 <p>The size and range of the different variable is too varied to give a meaningful result.</p>
+                                <br>
+                                <br>
                                 <img class="img-fluid" src="static/images/code5.jpg" alt="alternative">
                                 <p>We created a correlation matrix to show which values are related to each other.</p>
                                 <p>This doesn't really show anything useful, since it looks like all the variables relate equally to each other. I included it here because it just looks really cool, and reminds me of spirographs I used to do as a kid.</p>
+                                <br>
+                                <br>
                                 <img class="img-fluid" src="static/images/code6.jpg" alt="alternative">
                                 <p>The next step was making sure none of the variable were too closely correlated to quality.</p>
                                 <ol class="li-space-lg">
@@ -187,12 +197,18 @@
                                     <li>Free sulphuric acid is highly correlated with total sulfur dioxide.</li>
                                     <li>Conclusion can be made that the attributes alcohol, sulphates, citric acid, fixed acidity have maximum correlation with 'quality'</li>
                                 </ol>
+                                <br>
+                                <br>
                                 <img class="img-fluid" src="static/images/code7.jpg" alt="alternative">
                                 <p>This is where we get to the nuts and bolts. We wanted to make sure we had an even distribution of good and bad wine entries, and then drop the target variable so the computer can't cheat.</p>
+                                <br>
+                                <br>
                                 <img class="img-fluid" src="static/images/code8.jpg" alt="alternative">
                                 <p> Results of the logistic regression are shown here.</p>
                                 <p>The first line shows all the rules we fed the model.</p>
                                 <p>Next we get the accuracy of the model, and the roc_auc_score. This is an indicator of the usefulness of the variables- .5</p>
+                                <br>
+                                <br>
 
                             </div>
                             <!-- end of text-container -->
