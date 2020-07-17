@@ -114,6 +114,19 @@ a.white {
     transition: all 0.2s;
 }
 
+.btn-md {
+    display: inline-block;
+    padding: 0.9rem 1.5rem 0.9rem 1.5rem;
+    border: 0.125rem solid #00c9db;
+    border-radius: 2rem;
+    background-color: #00c9db;
+    color: #fff;
+    font: 700 0.75rem/0 "Montserrat", sans-serif;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    transition: all 0.2s;
+}
+
 .btn-solid-reg:hover {
     background-color: transparent;
     color: #00c9db;
