@@ -27,7 +27,7 @@ def get_delay():
         
         # print(prediction)
     
-        return render_template('template.html',prediction=prediction,fa=fa)
+        return render_template('template.html',prediction=prediction)
 
 
 @app.route("/")
