@@ -9,11 +9,9 @@ BE <span id="js-rotating">GOOD, POOR</span>
 
 Using the attributes of wine to predict the quality it will produce
 
-<div class="swiper-slide">
+(static/images/ph_pic.jfif)
 
-<div class="card">![alternative](static/images/ph_pic.jfif)
 
-<div class="card-body">
 
 Winemakers use pH as a way to measure ripeness in relation to acidity. Low pH wines will taste tart and crisp, while higher pH wines are more susceptible to bacterial growth.
 
