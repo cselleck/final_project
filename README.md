@@ -9,7 +9,7 @@ BE <span id="js-rotating">GOOD, POOR</span>
 
 Using the attributes of wine to predict the quality it will produce
 
-(static/images/ph_pic.jfif)
+![ph](static/images/ph_pic.jfif)
 
 
 
