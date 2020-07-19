@@ -36,7 +36,7 @@ def index():
 
 @app.route("/template")
 def template():
-    return render_template("template.html")
+    return render_template("/template.html")
 
 @app.route("/privacy-policy")
 def privacy_policy():
