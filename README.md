@@ -4,6 +4,9 @@
 
 Visit our Tableau analysis at https://public.tableau.com/profile/donald.mudd#!/vizhome/WineCharts/alcohol?publish=yes
 
+# Project Purpose
+
+We wanted to use machine learning to predict the quality of a wine based on the chemical attributes of the wine, and create an app that would allow a winemaker to make their own "recipe" to predict whether it would make a good or a bad wine.
 
 
 ### The Madness to our Methods
