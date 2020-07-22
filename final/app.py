@@ -27,20 +27,20 @@ def get_delay():
         
         # print(prediction)
     
-        return render_template('final/template.html',prediction=prediction)
+        return render_template('template.html',prediction=prediction)
 
 
 @app.route("/")
 def index():
-    return render_template("final/index.html")
+    return render_template("index.html")
 
 @app.route("/template")
 def template():
-    return render_template("final/template.html")
+    return render_template("template.html")
 
 @app.route("/privacy-policy")
 def privacy_policy():
-    return render_template("final/privacy-policy.html")
+    return render_template("privacy-policy.html")
 
 
 # @app.route('/predict')
