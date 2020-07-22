@@ -1,17 +1,14 @@
 # final_project
 
-##Visit our final website at https://wine-quality2.herokuapp.com/
+## Visit our final website at https://wine-quality2.herokuapp.com/
 
 Visit our Tableau analysis at https://public.tableau.com/profile/donald.mudd#!/vizhome/WineCharts/alcohol?publish=yes
 
 
 
-</div>
-
-</div>
 ### The Madness to our Methods
 
-<div class="text-container">
+
 
 ### Walk-through of our coding
 
