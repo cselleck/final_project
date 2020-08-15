@@ -1,4 +1,4 @@
-                                                                                                                                          Bio page https://cselleck.github.io/
+                                                                                                                                    https://cselleck.github.io/
 # final_project
 
 ## Visit our final website at https://wine-quality2.herokuapp.com/
