@@ -22,7 +22,7 @@ def get_delay():
         final_list=np.array(final_list)
         fa=float(result['fixed_acidity'])
         va=float(result['volatile_acidity'])
-        lg_from_joblib=joblib.load('final/static/data/finalized_model_joblib.obj')
+        lg_from_joblib=joblib.load('static/data/finalized_model_joblib.obj')
         prediction = lg_from_joblib.predict(final_list)
         
         # print(prediction)
