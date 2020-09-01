@@ -1,16 +1,18 @@
+bio page: https://cselleck.github.io/
 # final_project
 
-##Visit our final website at https://master.dxyc7zu9259ce.amplifyapp.com/
+## Visit our final website at https://wine-quality2.herokuapp.com/
+
+Visit our Tableau analysis at https://public.tableau.com/profile/donald.mudd#!/vizhome/WineCharts/alcohol?publish=yes
+
+# Project Purpose
+
+We wanted to use machine learning to predict the quality of a wine based on the chemical attributes of the wine, and create an app that would allow a winemaker to make their own "recipe" to predict whether it would make a good or a bad wine.
 
 
-
-
-</div>
-
-</div>
 ### The Madness to our Methods
 
-<div class="text-container">
+
 
 ### Walk-through of our coding
 
